@@ -12,10 +12,10 @@
     <br>
     <h2>Minhas habilidades</h2>
     <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">Vue</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">PHP</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">MySQL</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">Docker</a></li>
+      <li><a href="http://vuejs.org/" target="_blank">Vue</a></li>
+      <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
+      <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+      <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
     </ul>
   </div>
 </template>
@@ -56,6 +56,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #48a324;
 }
 </style>
