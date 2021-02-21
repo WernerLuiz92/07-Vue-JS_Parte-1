@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
-    <ul v-for="foto in pictures" :key="foto.url">
-      <li>
+  <div class="body">
+    <h1 class="center">{{ title }}</h1>
+    <ul class="picture-list">
+      <li class="picture-list-item" v-for="foto in pictures" :key="foto.url">
         <img :src="foto.url" :alt="foto.title">
       </li>
     </ul>
@@ -28,5 +28,22 @@ export default {
 </script>
 
 <style>
+  .body {
+    font-family: Helvetica, sans-serif;
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .picture-list {
+    list-style: none;    
+  }
+
+  .picture-list .picture-list-item {
+    display: inline-block;
+  }
 
 </style>
