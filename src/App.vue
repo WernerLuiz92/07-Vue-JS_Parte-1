@@ -1,61 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png" height="200px">
-    <h1>{{ msg }}</h1>
-    <h2>Entre em contato comigo:</h2>
-    <ul>
-      <li><a href="https://github.com/WernerLuiz92" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/werner-gottschalt/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.facebook.com/werner.gottschalt" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com/werner_luiz/" target="_blank">Instagram</a></li>
-    </ul>
-    <br>
-    <h2>Minhas habilidades</h2>
-    <ul>
-      <li><a href="http://vuejs.org/" target="_blank">Vue</a></li>
-      <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
-      <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
-      <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
-    </ul>
+  <div>
+    <h1>{{ title }}</h1>
+    <img :src="picture.url" :alt="picture.title" width="100%">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
+  
+  data() {
     return {
-      msg: 'Werner Gottschalt'
+      title: 'AluraPIC',
+      picture: {
+        url: 'https://super.abril.com.br/wp-content/uploads/2016/10/super_imgnao_deixe_seu_cachorro_lamber.jpg',
+        title: 'Cachorrinho fofo'
+      }
     }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #48a324;
-}
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
 </style>
