@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" height="200px">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>Entre em contato comigo:</h2>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+      <li><a href="https://github.com/WernerLuiz92" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/werner-gottschalt/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/werner.gottschalt" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/werner_luiz/" target="_blank">Instagram</a></li>
     </ul>
-    <h2>Ecosystem</h2>
+    <br>
+    <h2>Minhas habilidades</h2>
     <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      <li><a href="http://router.vuejs.org/" target="_blank">Vue</a></li>
+      <li><a href="http://vuex.vuejs.org/" target="_blank">PHP</a></li>
+      <li><a href="http://vue-loader.vuejs.org/" target="_blank">MySQL</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">Docker</a></li>
     </ul>
   </div>
 </template>
@@ -24,7 +25,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Werner Gottschalt'
     }
   }
 }
