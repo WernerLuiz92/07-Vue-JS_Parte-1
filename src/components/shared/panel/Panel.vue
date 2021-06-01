@@ -1,6 +1,6 @@
 <template>
     <div class="panel">
-        <div class="panel-header">
+        <div class="panel-header" @click="enabled = !enabled">
             <h2 class="panel-title">{{ title }}</h2>
             <font-awesome-icon :icon="['fas', 'heart']" />
             <font-awesome-icon :icon="['fas', 'heart']" />
@@ -8,9 +8,13 @@
             <font-awesome-icon :icon="['fas', 'heart']" />
             <font-awesome-icon :icon="['far', 'heart']" />
         </div>
-        <slot name="content" class="panel-content">
-            <!-- Content -->
-        </slot>
+        <transition name="panel-fade">
+            <div class="panel-content" v-show="enabled">
+                <slot name="panel-content">
+                    <!-- Content -->
+                </slot>
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -18,7 +22,12 @@
     export default {
         props: [
             'title'
-        ]
+        ],
+        data() {
+            return {
+                enabled: true
+            }
+        }
     }
 </script>
 
@@ -47,5 +56,13 @@
         margin: 0 0 15px 0;
         padding: 10px;
         text-transform: uppercase;
+    }
+
+    .panel-fade-enter, .panel-fade-leave-active {
+        opacity: 0;
+    }
+
+    .panel-fade-enter-active, .panel-fade-leave-active {
+        transition: opacity .4s;
     }
 </style>
